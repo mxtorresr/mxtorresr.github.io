@@ -53,7 +53,9 @@ article p.town-article img {  /* This structure refers to img elements that are 
   margin: ???;
 }
 
-footer {}
+footer {
+    text-align: center;
+}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
