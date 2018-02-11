@@ -5,7 +5,7 @@
 body {
   font-size: 16px;
   /* Declare the base font-family - from google font api or other */
-  font-family: "Helvetica", "Arial" "Times New Roman";
+  font-family: "Helvetica", "Arial", "Times New Roman";
   max-width: 90%;
   max-height: 100%;
   margin: auto
