@@ -16,12 +16,21 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header {}
-header h1 {}
-header img {}
-header .subheading {}
+header h1 {
+    display: block;
+    padding-left: 4em;
+}
+header img {
+    float:left;
+}
+header .subheading {
+    padding-left: 8em;
+}
 
 nav {}
-nav button {}
+nav button {
+    float: left;
+}
 nav ul {
     background-color: #333;
 }
@@ -34,7 +43,7 @@ nav ul li a:hover {}
 
 main {}
 main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure { margin: .2rem .2rem .2rem .2rem; width:98%; }
 main figure img { width: 100%; }
 
 
@@ -49,8 +58,8 @@ section{
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+  width: 100%; /* fill the page in the small/phone view */
+  margin: .1em;
 }
 
 footer {
