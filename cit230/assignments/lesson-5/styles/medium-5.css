@@ -14,9 +14,18 @@ nav ul li.active a {}
 nav ul li a:hover {
     background-color: #111;
 }
-  
+section{}
+
+table{
+    background-color: #ea9c40;
+    border: 2px double;
+    max-width: 100%;
+    display: inline-table;
+}
+table, th, td{
+    border: 2px double;
+    }
   section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
   
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
-
 }
