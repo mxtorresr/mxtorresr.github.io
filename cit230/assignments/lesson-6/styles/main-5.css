@@ -1,0 +1,79 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+  font-family: 'Lora','Helvetica', 'Arial';
+  max-width: 90%;
+  max-height: 100%;
+  margin: auto
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {
+    display: block;
+    padding-left: 4em;
+}
+header img {
+    float:left;
+}
+header .subheading {
+    padding-left: 8em;
+}
+
+nav {}
+nav button {
+    float: left;
+}
+nav ul {
+    background-color: #333;
+}
+nav ul li {}
+nav ul li a {
+    color: white;
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2 {}
+main figure.franklin {
+    margin: .2rem .2rem .2rem .2rem;
+    width:98%;
+    /*border: 1px red dashed; trial to see if theimage always fits with the border*/
+}
+main figure.franklin img {
+    width: 100%;
+}
+main figure.franklin figcaption {
+    font-size: .65rem;
+}
+
+
+section{
+    text-align: center;
+}
+
+.forecast {
+    display: none;
+    
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+  margin: .1em;
+}
+
+footer {
+    text-align: center;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
