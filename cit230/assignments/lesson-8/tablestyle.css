@@ -1,3 +1,15 @@
+main {
+    font-family: "Ubuntu", sans-serif;
+}
 table, th, td {
     border: 1px solid black;
 }
+td {
+    text-align: center;
+}
+thead, tfoot {
+    background-color: #e7f0ed;
+} 
+/*thead {
+    background-color: #e7f0ed;
+}*/
