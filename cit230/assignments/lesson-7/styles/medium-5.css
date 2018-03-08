@@ -6,11 +6,12 @@ header .hamburger{
     }
 /*nav button { display:none; }  hamburger button does not need to be shown */
 
-.navigation li{
-    display: inline-flex;
-    justify-content: space-between;
-}
-/*.navigation ul {
+.navigation {
+    display: flex;
+    /*text-align: center;*/
+}    
+
+.navigation ul {
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -19,17 +20,18 @@ header .hamburger{
     }
 
 .navigation li {
-    display: inline;
+    display: flex;
     list-style-type: none;
 }
     
 nav ul li {
-    display: inline;
+    display: flex;
 }
 nav ul li a {
     text-align: center;
     padding: 16px 20px;
-}*/
+}
+    
 nav ul li.active a {}
 nav ul li a:hover {
     background-color: #111;

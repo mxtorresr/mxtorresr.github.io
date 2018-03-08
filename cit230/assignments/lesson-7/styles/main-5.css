@@ -31,12 +31,13 @@ header .hamburger{
 }
 
 /* begin JavaScript Nav*/
-.navigation{
+/*.navigation{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: center;*/
 }
-/*.navigation {
+.navigation {
+    display: flex;
     text-align: center;
 }
 
@@ -45,7 +46,7 @@ header .hamburger{
 }
 
 .navigation a{
-    display: inline;
+    display: inline;*/
 }
 .navigation.responsive {
     position: relative;
@@ -63,7 +64,7 @@ header .hamburger{
     text-align: center;
     display: block;
     text-decoration: none;
-}*/
+}
 
 .navigation.responsive li a:hover {
     background-color: #eac01b;
