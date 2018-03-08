@@ -34,8 +34,8 @@ header .hamburger{
 /*.navigation{
     display: flex;
     flex-direction: column;
-    text-align: center;*/
-}
+    text-align: center;
+}*/
 .navigation {
     display: flex;
     text-align: center;
