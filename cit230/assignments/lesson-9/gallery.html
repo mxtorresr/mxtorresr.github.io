@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How´s today looking?-Local Weather|Weather project</title>
+  <meta name="author" content="Mauricio X. Torres">
+  <meta name="description" content="Local weather available on time for Franklin city ">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="images/weather-logo.png" alt="The site logo" width="100">
+    <h1>How´s today looking?</h1>
+    <div class="subheading">The weather here and now</div>
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    
+    <ul class="navigation">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li class="active"><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+        <h2>Photo Gallery</h2>
+   
+        <div class="gallery">
+          
+            <img src="images/cloudy.jpeg" alt="Cloudy">
+            <figcaption>Cloudy at night</figcaption><br>
+
+            <img src="images/foggy.jpeg" alt="Foggy">
+            <figcaption>Foggy at morning.</figcaption><br>
+          
+            <img src="images/Fresh.jpeg" alt="Fresh">
+            <figcaption>Fresh at morning.</figcaption><br>
+            
+            <img src="images/rainy.jpg" alt="Rainy">
+            <figcaption>Rainy at afternoon.</figcaption><br>
+            
+            <img src="images/starry.jpeg" alt="Starry">
+            <figcaption>Starry at night.</figcaption><br>
+            
+            <img src="images/storm.jpeg" alt="Storm">
+            <figcaption>Storm at afternoon.</figcaption><br>
+          
+        </div>
+  </main>
+
+    
+  <footer>
+    <aside>
+      <p>(593) 9925-46597 | info@howstoday.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | How´s today looking? | <span id="date">r</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>
