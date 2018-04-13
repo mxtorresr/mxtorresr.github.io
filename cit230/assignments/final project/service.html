@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="author" content="Mauricio X Torres">
+        <meta name="description" content="The Mountain Spoke Page">
+        <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+        
+        <script>
+	       $(function(){
+		      // All jQuery code goes here
+                $('.navigation > li').hover( function(){
+                    $(this).children("ul").slideDown(200);
+                }, function(){
+                    $(this).children("ul").slideUp(200);
+                })
+	       })
+	   </script>
+        
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/servicesmall.css" rel="stylesheet"> <!-- default styles - small/phone views -->
+        <link href="styles/servicemedium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/servicelarge.css" rel="stylesheet">   <!-- large/wide/desktop views -->   
+    </head>
+    
+    <body>
+        <header>
+            <img src="images/logo.png" alt="The site logo">
+            <h1>The Mountain Spoke</h1>
+            <div class="subheading">Enjoy and love the road</div> 
+        </header>
+
+  <!-- site navigation use placeholder references -->
+        <nav>
+            <button class= "hamburger" onclick="toggleHam()">&#9776;</button>
+            <ul class="navigation">
+    	       <li><a href="index.html">Home</a></li>
+    	       <li><a href="adventure.html">Adventure</a></li>
+    	       <li><a href="event.html">Event</a></li>
+    	       <li class="menu">Sales
+                <ul>
+				    <li><a href="mountainbike.html">Mountain Bike</a></li>
+				    <li><a href="roadbike.html">Road Bike</a></li>
+				    <li><a href="kidsbike.html">Kids Bike</a></li>
+			    </ul>
+        </li>
+    	<li class="active"><a href="service.html">Service</a></li>
+    	<li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+        <div class="head">
+          <h2>Labour Charges</h2>
+          <h3>&#42; 25&#37; off all prices with Silver and Gold service</h3>
+        </div>
+        <div class="container">
+<table class="service">
+<thead>
+<tr>
+<th colspan="2">Services</th>    
+</tr>    
+</thead>
+<tbody>
+<tr>
+<th>Description</th>  
+<th>Price</th>
+</tr>
+<tr>
+<td>Bronze</td>
+<td>&#36;50</td>
+</tr>
+<tr>
+<td>Silver Service</td>
+<td>&#36;70</td>
+</tr>
+<tr>
+<td>Gold Service - full strip down</td>
+<td>&#36;155</td>
+</tr>
+<tr>
+<td>Gear Service - degrease all drive parts</td>
+<td>&#36;55</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="2">&#42; Price do not include parts</td>  
+</tr>    
+</tfoot>
+</table>
+        
+<table class="brake">
+<thead>
+<tr>
+<th colspan="2">Brakes</th>    
+</tr>    
+</thead>
+<tbody>
+<tr>
+<th>Description</th>  
+<th>Price</th>
+</tr>
+<tr>
+<td>Brake pads fit per brake and adjust</td>
+<td>&#36;18</td>
+</tr>
+<tr>
+<td>Inner cable fit</td>
+<td>&#36;18 each &#47; &#36;25 both </td>
+</tr>
+<tr>
+<td>Outer casing fit</td>
+<td>&#36;18 each &#47; &#36;25 both</td>
+</tr>
+<tr>
+<td>Full set - gears and brakes - inners and outers</td>
+<td>&#36;45</td>
+</tr>
+<tr>
+<td>Brake adjustment</td>
+<td>&#36;17</td>
+</tr>
+<tr>
+<td>Brake lever fit and adjust</td>
+<td>&#36;26</td>
+</tr>
+<tr>
+<td>Calliper fit &#47; replacement and adjust</td>
+<td>&#36;25</td>
+</tr>
+<tr>
+<td>Brake service</td>
+<td>&#36;18 each &#47; &#36;30 both</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="2">&#42; Price do not include parts</td>  
+</tr>    
+</tfoot>
+</table>
+<table class="wheels">
+<thead>
+<tr>
+<th colspan="2">Wheels</th>    
+</tr>    
+</thead>
+<tbody>
+<tr>
+<th>Description</th>  
+<th>Price</th>
+</tr>
+<tr>
+<td>Replace tyre or inner tube on standard wheel</td>
+<td>&#36;15</td>
+</tr>
+<tr>
+<td>Fit inner tube &#47; Tyre - hub gear without cover</td>
+<td>&#36;25</td>
+</tr>
+<tr>
+<td>Fit inner tube &#47; Tyre - hub gear with cover</td>
+<td>&#36;35</td>
+</tr>
+<tr>
+<td>Axle cones adjustment</td>
+<td>&#36;18</td>
+</tr>
+<tr>
+<td>Wheel true (per wheel)</td>
+<td>&#36;23</td>
+</tr>
+<tr>
+<td>Wheel true and spokes re-tension</td>
+<td>&#36;35</td>
+</tr>
+<tr>
+<td>Wheel build</td>
+<td>&#36;80</td>
+</tr>
+<tr>
+<td>Hub service</td>
+<td>&#36;28</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="2">&#42; Price do not include parts</td>  
+</tr>    
+</tfoot>
+</table>
+</div>
+</main> 
+        
+<footer>
+    <aside>
+     <h3>The Mountain Spoke</h3> 
+    <p>3950 Valley Commons Drive, Bozeman, MT</p>
+    <p>Phone: (999) 999.9999. Email: <a href="mailto:#">contact@mountainspoke.com</a></p>
+    <p>Web page Overview Video:  <a href="overviewvideo.php" target="_blank">Watch Video</a>.
+</p>
+    </aside>
+    
+    <p class="footer-bar">&copy;2018 | The Mountain Spoke | <span id="date">Current Date Placeholder</span></p>
+    <p></p>        
+  </footer>
+  
+  <script src="scripts/hamburguer.js"></script>
+  <!--script src="scripts/activenav.js"></script-->
+  <script src="scripts/currentdate.js"></script>
+</body>
+</html>

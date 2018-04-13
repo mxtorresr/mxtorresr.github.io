@@ -1,0 +1,41 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+nav {
+    background-color: #82E0AA;
+}
+ 
+  .hamburger { display:none; }  /* hamburger button does not need to be shown */
+   .navigation{display: block;}
+    .navigation li {display: inline-flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+   
+    }
+    .container h2 {
+        text-align:  center;
+        color: #800000;
+    }
+    .medium{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px;
+        grid-column-gap: 20px;
+        width: 100%;
+        }
+    form{
+        background-color: #7fb9c2;
+        padding: 1rem;
+        color: #fff;
+        width: 96%;
+        
+      }
+    .google{
+        align-items: center;
+        width: 96%;
+        height: 250px;
+    }
+    h4{
+        margin: 10px;
+        color: #800000;
+    }
+}

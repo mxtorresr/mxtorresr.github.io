@@ -1,0 +1,33 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+nav {
+    background-color: #82E0AA;
+}
+
+  .hamburger { display:none; }  /* hamburger button does not need to be shown */
+   .navigation{display: block;}
+    .navigation li {display: inline-flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+   
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px;
+    } 
+    .head {
+        color:#800000;
+        background-color: #7fb9c2;
+        text-align: center;
+        width: 100%;
+      }
+   tbody tr:nth-child(even) td {
+      font-size: 12px; 
+    }
+    tbody tr:nth-child(odd) td {
+       font-size: 12px; 
+    }
+}

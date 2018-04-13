@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="author" content="Mauricio X Torres">
+        <meta name="description" content="The Mountain Spoke Page">
+        <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+        
+        <script>
+	       $(function(){
+		      // All jQuery code goes here
+                $('.navigation > li').hover( function(){
+                    $(this).children("ul").slideDown(200);
+                }, function(){
+                    $(this).children("ul").slideUp(200);
+                })
+	       })
+	   </script>
+        
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/eventsmall.css" rel="stylesheet"> <!-- default styles - small/phone views -->
+        <link href="styles/eventmedium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/eventlarge.css" rel="stylesheet">   <!-- large/wide/desktop views -->   
+    </head>
+    
+    <body>
+        <header>
+            <img src="images/logo.png" alt="The site logo">
+            <h1>The Mountain Spoke</h1>
+            <div class="subheading">Enjoy and love the road</div> 
+        </header>
+
+  <!-- site navigation use placeholder references -->
+        <nav>
+            <button class= "hamburger" onclick="toggleHam()">&#9776;</button>
+            <ul class="navigation">
+    	       <li><a href="index.html">Home</a></li>
+    	       <li><a href="adventure.html">Adventure</a></li>
+    	       <li class="active"><a href="event.html">Event</a></li>
+    	       <li class="menu">Sales
+                <ul>
+				    <li><a href="mountainbike.html">Mountain Bike</a></li>
+				    <li><a href="roadiyke.html">Road Bike</a></li>
+				    <li><a href="kidsbike.html">Kids Bike</a></li>
+			    </ul>
+        </li>
+    	<li><a href="service.html">Service</a></li>
+    	<li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+        
+ <main class="container">
+    <h1> Event</h1>
+        <div class="event">
+            <div class="cycle">
+                <div>
+        <h2>Cycle the Continental Divide</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        <img src="images/eventoriginal.jpeg" alt= "event" 
+             sizes= "100vw"
+             srcset="images/eventsmall400.jpeg 400w, images/eventmedium800.jpeg 800w, images/eventlarge1200.jpeg 1200w">
+                </div>
+            <div class="eventend">
+            <div class="information">
+            <h2>Information</h2>
+            <ul>
+            <li>Date: <a>from January 15 to 30, 2018</a></li>
+            <li>Country: <a>United States</a></li>
+            <li>Cost: <a>&#36;16000</a></li>
+            <li class="requirements">Requirements:
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>           
+                </ul>
+            </li>
+            </ul>
+            <a id="register" href="registration.php">Register now</a>
+                </div>
+        <div class="route">
+           <h2>Route</h2> 
+           <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5021397.099923094!2d-120.36645803869165!3d40.209855970211876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C+USA!3m2!1d36.778261!2d-119.4179324!4m5!1s0x53540b0031b30f3f%3A0x58e64eb89d95b673!2sBYUI+Store%2C+Brigham+Young+University-Idaho%2C+South+Center+Street%2C+Rexburg%2C+ID%2C+USA!3m2!1d43.8186636!2d-111.78250539999999!5e1!3m2!1sen!2sec!4v1513368343276" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> 
+           </div>
+           </div>
+            
+  </div>
+    
+  </main>
+
+
+<footer>
+    <aside>
+     <h3>The Mountain Spoke</h3> 
+    <p>3950 Valley Commons Drive, Bozeman, MT</p>
+    <p>Phone: (999) 999.9999. Email: <a href="mailto:#">contact@mountainspoke.com</a></p>
+    <p>Web page Overview Video:  <a href="overviewvideo.php" target="_blank">Watch Video</a>.
+</p>
+    </aside>
+    
+    <p class="footer-bar">&copy;2018 | The Mountain Spoke | <span id="date">Current Date Placeholder</span></p>
+    <p></p>        
+  </footer>
+  
+  <script src="scripts/hamburguer.js"></script>
+  <!--script src="scripts/activenav.js"></script-->
+  <script src="scripts/currentdate.js"></script>
+</body>
+</html>
