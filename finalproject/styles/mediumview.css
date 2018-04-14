@@ -1,0 +1,114 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  .hamburger { display:none; }  /* hamburger button does not need to be shown */
+   .navigation{display: block;}
+    .navigation li {display: inline-flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+    }
+    /*ojo desde aqui todo navigation*/
+    .navigation {
+    list-style: none;
+    padding-left: 0;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+}
+    
+.navigation li { display: inline; }
+
+/*Nav Style*/
+
+
+.navigation a{
+    display: inline;
+}
+
+.navigation.responsive {
+    position: relative;
+}
+
+.navigation.responsive li {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    border: 3px;
+}
+.navigation.responsive li a {
+    color: #fff;
+    padding: .20rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.navigation.responsive li a:hover {
+    background-color: #eac01b;
+}
+    
+
+    .homepage{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 275px;
+        grid-column-gap: 10px;
+        width: 100%;
+        font-size: 10px;
+        
+            }
+    
+   #home1 {
+        max-width: 2000px;
+        max-height: 200px;
+        /*border: 1px solid black;*/
+        margin: 10px;
+        text-align: center;
+    }
+    .container h2{
+        color: #800000;
+        font-size: 35px;
+    }
+    .container a{
+        color: #FF0000;
+        font-size: 14px;
+    }
+    .homepage img {
+        max-width: 100%;
+        max-height: 450px;
+        margin: 10px;
+    }
+    
+    .homepage p {
+        max-height: 300px;
+        margin: 5px;
+        font-size: 15px;
+    }
+    .new{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 485px;
+        grid-column-gap: 10px;
+        width: 125%;
+        font-size: 15px;
+    }
+    .eventpage{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap:nowrap;
+        margin: 10px;
+        width:80%;
+        /*border: 1px solid black;*/
+        text-align: center;
+        align-items: center;
+    }
+    
+    .eventpage img {
+        
+        max-width: 98%;
+        max-height: 250px;
+        margin: 10px;
+               
+   }
+    
+    

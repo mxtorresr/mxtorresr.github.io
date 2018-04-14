@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="author" content="Mauricio X Torres">
+        <meta name="description" content="The Mountain Spoke Page">
+        <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+        
+        <script>
+	       $(function(){
+		      // All jQuery code goes here
+                $('.navigation > li').hover( function(){
+                    $(this).children("ul").slideDown(200);
+                }, function(){
+                    $(this).children("ul").slideUp(200);
+                })
+	       })
+	   </script>
+        
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/contactsmall.css" rel="stylesheet"> <!-- default styles - small/phone views -->
+        <link href="styles/contactmedium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/contactlarge.css" rel="stylesheet">   <!-- large/wide/desktop views -->   
+    </head>
+    
+    <body>
+        <header>
+            <img src="images/logo.png" alt="The site logo">
+            <h1>The Mountain Spoke</h1>
+            <div class="subheading">Enjoy and love the road</div> 
+        </header>
+
+  <!-- site navigation use placeholder references -->
+        <nav>
+            <button class= "hamburger" onclick="toggleHam()">&#9776;</button>
+            <ul class="navigation">
+    	       <li><a href="index.html">Home</a></li>
+    	       <li><a href="adventure.html">Adventure</a></li>
+    	       <li><a href="event.html">Event</a></li>
+    	       <li class="menu">Sales
+                <ul>
+				    <li><a href="mountainbike.html">Mountain Bike</a></li>
+				    <li><a href="roadbike.html">Road Bike</a></li>
+				    <li><a href="kidsbike.html">Kids Bike</a></li>
+			    </ul>
+        </li>
+    	<li><a href="service.html">Service</a></li>
+    	<li class="active"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+    
+<main class="container">
+        <h2>Contact us</h2>
+        <div class="medium">
+        <div class="form1">
+        <form>
+            
+            <label for="fullname">Your name:(required)</label><br>
+  <input type="text" name="fullname" placeholder="Your name" pattern="[A-Za-z ]{5,60}" required><br>
+  <label for="email">Your E-mail:(required)</label><br>
+  <input type="email" name="email" placeholder="aaaaa@ddddd.com" required><br>
+            <label for="comments">Your Message</label><br>      
+  <textarea name="message" rows="10" cols="30"></textarea>
+  <br>          
+  <input id="submit" type="submit">
+        </form>
+        </div>
+        
+    <div class="map">
+            <h2>Find us</h2>
+        <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9487388391376!2d-111.09298598492342!3d45.671929379103915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345458559cf66a1%3A0x858c0351ba741919!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718%2C+USA!5e0!3m2!1sen!2sec!4v1513204025064" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div class="social">
+        <h4>Follow us</h4>
+        <a href="http://www.youtube.com" onclick="#" target="_blank" style="cursor:hand;"><img src="images/youtubelogo.png" width="75px" height="75px" alt="YouTube" border="2"></a>  <a href="http://twitter.com" onclick="#" target="_blank" style="cursor:hand;"><img src="images/twitterlogo.jpg" width="75px" height="75px" alt="Twitter" border="2"></a>  <a href="http://facebook.com" onclick="#" target="_blank" style="cursor:hand;"><img src="images/facebooklogo.png" width="95px" height="75px" alt="Facebook" border="2"></a>
+    </div>
+
+    </main>
+    
+  <footer>
+    <aside>
+     <h3>The Mountain Spoke</h3> 
+    <p>3950 Valley Commons Drive, Bozeman, MT</p>
+    <p>Phone: (999) 999.9999. Email: <a href="mailto:#">contact@mountainspoke.com</a></p>
+    <p>Web page Overview Video:  <a href="overviewvideo.php" target="_blank">Watch Video</a>.
+</p>
+    </aside>
+    
+    <p class="footer-bar">&copy;2018 | The Mountain Spoke | <span id="date">Current Date Placeholder</span></p>
+    <p></p>        
+  </footer>
+  
+  <script src="scripts/hamburguer.js"></script>
+  <!--script src="scripts/activenav.js"></script-->
+  <script src="scripts/currentdate.js"></script>
+</body>
+</html>
