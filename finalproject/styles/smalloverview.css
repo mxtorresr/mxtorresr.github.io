@@ -1,0 +1,131 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+html{
+    margin: 10px;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lora', serif;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { 
+    max-width: inherit;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {background-color: #454545;
+         text-align: center;}
+header h1 {color: #fff;}
+header img {
+    float: left;
+    max-width: 75px;
+}
+header .subheading {color: #fff;}
+
+.hamburger {display: block; position: absolute; top: 5rem;right: .8rem;}
+.navigation { list-style: none; padding-left: 0; }
+.navigation li { display: none; }
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive { position: relative;  }
+    .navigation.responsive li { background-color: #82E0AA; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+    .navigation.responsive li a {   text-align: center;  display: block; text-decoration:none; }
+    .navigation.responsive li a:hover { background-color: #4169E1; }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    } 
+    
+    video{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        
+    }
+    
+    }
+.container{
+    align-items: center;
+    background-color: #7fb9c2;
+}
+.container h1{
+    text-align: center;
+        color: #800000;
+}
+    
+nav ul {
+	text-align: center;
+    margin: 0;
+    padding: 0;
+    }
+
+nav ul li {
+    color: #fff;
+	width: 90px;
+	height: 48px;
+	text-align: center;
+	line-height: 3.6;
+    font-size: 14px;
+	}
+
+li > ul {
+	 background-color: #82E0AA;
+    position:relative;
+	width:150px;
+	clear:both;
+	/* Hide the Submenus */
+	display:none;
+}
+
+.menu ul a{
+    font-size: 12px;
+}
+
+
+nav ul li a { list-style-type: none;
+    width: 100%;
+    color:#fff;
+    text-align:center;
+    
+    font-size: 14px;
+    text-decoration:none;
+   }
+nav ul li.active a {
+    width: 100%;
+    background-color:darkgray;
+}
+nav ul li a:hover {
+    width: 100%;
+    background-color: #4169E1;
+}
+footer {text-align: center;
+   background-color: #454545 ; }
+footer aside {
+    color: #fff;}
+aside a {
+    color: #fff;
+}
+footer>p {color: #fff;} /* This structure refers to p elements that are direct children of the footer element */
+
+
+/* Other Class Selectors */
+.navigation:after, .row:after{
+  content:"";
+  display: block;
+  clear: both;}
