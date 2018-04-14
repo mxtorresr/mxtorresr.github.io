@@ -8,10 +8,11 @@ html{
 
 body {
   font-size: 16px;
-  font-family: 'Lora', serif, 'arial';
+  font-family: 'Lora', serif;
     /* Declare the base font-family - from google font api or other */
+}
 
-}header, nav, main, footer { 
+header, nav, main, footer { 
     max-width: inherit;
     /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -24,136 +25,122 @@ header img {
     float: left;
     max-width: 75px;
 }
+header .subheading {color: #fff;}
 
-header .subheading {
-    color: #fff;
-}
-
-nav {
-    background-color: #82E0AB;
-}
-
-.hamburger {display: block; position: absolute; top: 5rem; right: .8rem;}
-
-.navigation {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
+.hamburger {display: block; position: absolute;top: 5rem;right: .8rem;}
+.navigation { list-style: none; padding-left: 0; }
 .navigation li { display: none; }
 
-/*Nav Style*/
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive { position: relative;  }
+    .navigation.responsive li { background-color: #82E0AA; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+    .navigation.responsive li a {   text-align: center;  display: block; text-decoration:none; }
+    .navigation.responsive li a:hover { background-color: #4169E1; }
+    .salespage{display: none;}
+    .properties {display: none;}
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 10px;
+        width:98%;
+        border: 1px solid black;
+        text-align: center;
+    }
+    
+.homepage p {
+        margin: 10px;
+    }
+    .homepage img {
+        margin: 10px;
+    }
+    #home1 h2{
+        color: #800000;
+    }
+    
+        .eventpage{
+        display: flex;
+        flex-direction:column-reverse;
+        flex-wrap: wrap;
+        margin: 10px;
+        width:98%;
+        border: 1px solid black;
+        text-align: center;
+    }
+    
+    .evenpage p{
+        margin: 10px;
+    }
+    .eventpage img{
+        margin: 10px;
+    }
+    #eventp h2{
+        color: #800000;
+    }
+    #eventp a{
+        color: #FF0000;
+        font-size: 20px;
+      }
+    }
 
+nav ul {
+	text-align: center;
+    margin: 0;
+    padding: 0;
+    }
 
-/*.navigation li {
-    display: none;
-}*/
-
-/*.navigation a{
-    display: inline;
-}*/
-
-/*.navigation.responsive {
-    position: relative;
-}*/
-
-.navigation.responsive li {
-    display: block;
-    width: 100%;
-    margin: 5px 0;
-    border: 3px;
-}
-.navigation.responsive li a {
+nav ul li {
     color: #fff;
-    padding: .20rem;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-}
+	width: 90px;
+	height: 48px;
+	text-align: center;
+	line-height: 3.6;
+    font-size: 14px;
+	}
 
-.navigation.responsive li a:hover {
-    background-color: #eac01b;
-}
-/* End Nav Style */
-
-.menu {
-    color: #fff;
+li > ul {
+	 background-color: #82E0AA;
+    position:relative;
+	width:150px;
+	clear:both;
+	/* Hide the Submenus */
+	display:none;
 }
 
 .menu ul a{
     font-size: 12px;
 }
 
-/*Main Style */
-main{
-    margin: 10px 20px;
+nav ul li a { list-style-type: none;
+    width: 100%;
+    color:#fff;
+    text-align:center;
+    
+    font-size: 14px;
+    text-decoration:none;
+   }
+nav ul li.active a {
+    width: 100%;
+    background-color:darkgray;
 }
-
-.homepage {
-        display: flex;
-        flex-direction: column;
-        /*flex-wrap: wrap;*/
-        margin: 10px;
-        width:98%;
-        border: 1px solid black;
-        text-align: left;
+nav ul li a:hover {
+    width: 100%;
+    background-color: #4169E1;
 }
-
-.homepage p {
-        margin: 10px;
-}
-
-.homepage img {
-        margin: 10px;
-}
-
-#home1 h2{
-        color: #800000;
-        text-align: center;
-}
-
-.eventpage{
-        display: flex;
-        flex-direction:column-reverse;
-        /*flex-wrap: wrap;*/
-        margin: 10px;
-        width:98%;
-        border: 1px solid black;
-        text-align: center;
-}
-
-.evenpage p{
-        margin: 10px;
-}
-
-.eventpage img{
-        margin: 10px;
-}
-
-#eventp h2{
-        color: #800000;
-}
-
-#eventp a{
-        color: #FF0000;
-        font-size: 20px;
-}
-/*End of Main Style/*
-
-/*Footer Style */
-footer{
-    text-align: center;
-    background-color: #454545;
-}
+footer {text-align: center;
+   background-color: #454545 ; }
 footer aside {
     color: #fff;}
 aside a {
     color: #fff;
 }
+
 footer>p {color: #fff;} /* This structure refers to p elements that are direct children of the footer element */
-/*End of Footer Style/*
 
-
+/* Other Class Selectors */
+.navigation:after, .row:after{
+  content:"";
+  display: block;
+  clear: both;}

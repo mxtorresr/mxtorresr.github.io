@@ -1,51 +1,16 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
+nav {
+    background-color: #82E0AA;
+}
+    
   .hamburger { display:none; }  /* hamburger button does not need to be shown */
    .navigation{display: block;}
     .navigation li {display: inline-flex;
                flex-direction: row;
                flex-wrap: wrap;
     }
-    /*ojo desde aqui todo navigation*/
-    .navigation {
-    list-style: none;
-    padding-left: 0;
-    display: block;
-    flex-direction: column;
-    text-align: center;
-}
-    
-.navigation li { display: inline; }
-
-/*Nav Style*/
-
-
-.navigation a{
-    display: inline;
-}
-
-.navigation.responsive {
-    position: relative;
-}
-
-.navigation.responsive li {
-    display: block;
-    width: 100%;
-    margin: 5px 0;
-    border: 3px;
-}
-.navigation.responsive li a {
-    color: #fff;
-    padding: .20rem;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-}
-
-.navigation.responsive li a:hover {
-    background-color: #eac01b;
-}
     
 
     .homepage{
